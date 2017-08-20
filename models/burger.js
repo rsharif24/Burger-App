@@ -1,4 +1,4 @@
-var orm = require("../config/orm");
+var orm = require("../config/orm.js");
 
 var burger = {
     selectAll: function(cb){
@@ -11,11 +11,16 @@ var burger = {
             cb(res);
         });
     },
-    updateOne: function(setName, setValue, whereName, whereValue, cb){
-        orm.updateOne("burgers", setName, setValue, whereName, whereValue, function(res){
-            cb(res);
-        });
-    }
+    updateOne: function(objColVals, condition, cb) {
+		orm.updateOne('burgers', objColVals, condition, function(res) {
+			cb(res);
+		});
+	}
+    // updateOne: function(setName, setValue, whereValue, cb){
+    //     orm.updateOne("burgers", setName, setValue, whereValue, function(res){
+    //         cb(res);
+    //     });
+    // }
 };
 
 module.exports = burger;
