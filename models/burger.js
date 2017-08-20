@@ -16,11 +16,6 @@ var burger = {
 			cb(res);
 		});
 	}
-    // updateOne: function(setName, setValue, whereValue, cb){
-    //     orm.updateOne("burgers", setName, setValue, whereValue, function(res){
-    //         cb(res);
-    //     });
-    // }
 };
 
 module.exports = burger;
