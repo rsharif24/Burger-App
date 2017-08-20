@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+}
+#header{
+    background-color: #F9A369;
+}
+h1{
+    padding-bottom: 80px;
+    margin-bottom: 60px;
+    font-size: 70px;
+    color: #f9f5e8;
+}
+#wrapper{
+    overflow: hidden;
+    background-color: #F9A369;
+    color: #f9f5e8;
+}
+ul{
+    list-style-type: none;
+    font-size: 20px;
+}
+li{
+    margin: 20px;
+}
+#textboxWrapper{
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 25px;
+    padding-top: 50px;
+}
+#submit{
+ background-color: #73AC85;
+ color: #f9f5e8;
+ border-style: none;
+}
+#devour{
+    background-color: #73AC85;
+    color: #f9f5e8;
+    border-style: none;
+   }

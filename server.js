@@ -6,8 +6,6 @@ var PORT = process.env.PORT || 3000;
 
 var app = express();
 
-var orm = require("./config/orm.js");
-
 app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({ extended: true }));

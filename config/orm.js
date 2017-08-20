@@ -21,8 +21,8 @@ var orm = {
         });
     },
     insertOne: function(table, col, value, cb){
-        var query = "insert into " + table + " (" + col + ") " + "values " + "('"+ value + "')";
-        connection.query(query, function(err, result){
+        var query = "insert into ?? (??) values (?)";
+        connection.query(query, [table, col, value], function(err, result){
             if (err) throw err;
             cb(result);
         });
