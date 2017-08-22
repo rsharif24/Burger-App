@@ -2,7 +2,7 @@ var express = require("express");
 var methodOverride = require("method-override");
 var bodyParser = require("body-parser");
 
-var port = process.env.PORT || 3000;
+app.set('port', (process.env.PORT || 5000));
 
 var app = express();
 
@@ -26,6 +26,7 @@ var routes = require("./controllers/burgers_controller.js");
 
 app.use("/", routes);
 
-app.listen(port, function(){
-    console.log("Listening on PORT: " + port)
+app.listen(app.get('port'), function() {
+    console.log('Node app is running on port', app.get('port'));
 });
+  
